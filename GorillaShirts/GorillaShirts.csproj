@@ -1,0 +1,78 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<LangVersion>9.0</LangVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="Resources\shirtbundle" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Include="Resources\shirtbundle" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="0Harmony">
+			<HintPath>$(BepInExAssemblyPath)\0Harmony.dll</HintPath>
+		</Reference>
+		<Reference Include="Assembly-CSharp">
+			<HintPath>$(GameAssemblyPath)\Assembly-CSharp.dll</HintPath>
+		</Reference>
+		<Reference Include="BepInEx">
+			<HintPath>$(BepInExAssemblyPath)\BepInEx.dll</HintPath>
+		</Reference>
+		<Reference Include="Bepinject">
+			<HintPath>$(PluginsPath)\Bepinject-Auros\Bepinject.dll</HintPath>
+		</Reference>
+		<Reference Include="Fusion.Runtime">
+		  <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Gorilla Tag\Gorilla Tag_Data\Managed\Fusion.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Newtonsoft.Json">
+		  <HintPath>$(BepInExAssemblyPath)\Newtonsoft.Json.dll</HintPath>
+		</Reference>
+		<Reference Include="Photon3Unity3D">
+			<HintPath>$(GameAssemblyPath)\Photon3Unity3D.dll</HintPath>
+		</Reference>
+		<Reference Include="PhotonRealtime">
+			<HintPath>$(GameAssemblyPath)\PhotonRealtime.dll</HintPath>
+		</Reference>
+		<Reference Include="PhotonUnityNetworking">
+			<HintPath>$(GameAssemblyPath)\PhotonUnityNetworking.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine">
+			<HintPath>$(GameAssemblyPath)\UnityEngine.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AnimationModule">
+			<HintPath>$(GameAssemblyPath)\UnityEngine.AnimationModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AssetBundleModule">
+			<HintPath>$(GameAssemblyPath)\UnityEngine.AssetBundleModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AudioModule">
+			<HintPath>$(GameAssemblyPath)\UnityEngine.AudioModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.CoreModule">
+			<HintPath>$(GameAssemblyPath)\UnityEngine.CoreModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ImageConversionModule">
+			<HintPath>$(GameAssemblyPath)\UnityEngine.ImageConversionModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ParticleSystemModule">
+			<HintPath>$(GameAssemblyPath)\UnityEngine.ParticleSystemModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.PhysicsModule">
+			<HintPath>$(GameAssemblyPath)\UnityEngine.PhysicsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UI">
+			<HintPath>$(GameAssemblyPath)\UnityEngine.UI.dll</HintPath>
+		</Reference>
+		<Reference Include="Zenject">
+			<HintPath>$(PluginsPath)\Extenject\Zenject.dll</HintPath>
+		</Reference>
+		<Reference Include="Zenject-usage">
+			<HintPath>$(PluginsPath)\Extenject\Zenject-usage.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+</Project>
